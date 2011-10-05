@@ -3,6 +3,8 @@ class Person <
 
   
   Struct.new(:first_name, :last_name, :city)
+    
+ 
 
 end
 
@@ -21,5 +23,8 @@ f.each_line { |line|
   p = Person.new
 
     people.push(p)
+
+    
+ 
 }
 
