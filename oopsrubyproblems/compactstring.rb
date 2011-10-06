@@ -1,7 +1,8 @@
 class CompactString
 
- def self.compact
- s='aabbbccddddeee'
+ def self.compact(s)
+ 
+ 
   arr = s.split("")
  ans = ""
  print arr
@@ -22,11 +23,12 @@ class CompactString
           end
       end
 
-     print ans+"\n" 
+     return ans+"\n" 
 
    end
  
  end
 
 
-CompactString.compact
+y=CompactString.compact("abbcccddddeeee")
+print y

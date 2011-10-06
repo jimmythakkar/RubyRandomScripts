@@ -1,6 +1,6 @@
 class String 
   def jcompact
- s='aabbbccddddeee'
+  s=self
   arr = s.split("")
  ans = ""
  print arr
@@ -20,11 +20,12 @@ class String
             count =1 
           end
       end
-
-     print ans+"\n" 
+     
+     return ans
 
    end
  
  end
-
- "aabbbccddddeee".jcompact
+s="abbcccsdggh"
+ y=s.jcompact
+  print y
