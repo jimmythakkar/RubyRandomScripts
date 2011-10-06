@@ -1,28 +1,29 @@
-
+# create a class person , a person has firstname, lastname and city
 class Person 
-   def initilize
+   :first_name
+   :last_name
+   :city
+    
       end
   
  
 
-  end
+ 
 
 
-    people = Array.new
+    people = Array.new                  # define an array to hold the Person records
 
+    f = File.open("people.csv", "r")    # open the csv file  
 
-    f = File.open("people.csv", "r")
+    f.each_line { |line|                # loop through each record in the  file, adding each record to  array.
 
-
-    f.each_line { |line|
-
-    fields = line.split(',')
+    fields = line.split(',')            # each line has fields separated by commas, so split those fields
   
-     p = Person.new
+     p = Person.new                     # create a new Person
 
      people.push(p)
      
-     puts people.to_s    
+     puts fields   
  
 }
 
